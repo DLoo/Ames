@@ -55,3 +55,23 @@ C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Ames\bin\Debug\System.W
 C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Ames\obj\Debug\Ames.csprojResolveAssemblyReference.cache
 C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Ames\obj\Debug\Ames.dll
 C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Ames\obj\Debug\Ames.pdb
+D:\AMES_Git\Ames\bin\Debug\EFAmesInfra_Authenticate.mdf
+D:\AMES_Git\Ames\bin\Debug\Ames.dll.config
+D:\AMES_Git\Ames\bin\Debug\Ames.dll
+D:\AMES_Git\Ames\bin\Debug\Ames.pdb
+D:\AMES_Git\Ames\bin\Debug\Ames.Entities.dll
+D:\AMES_Git\Ames\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\AMES_Git\Ames\bin\Debug\System.Net.Http.Formatting.dll
+D:\AMES_Git\Ames\bin\Debug\System.Web.Http.dll
+D:\AMES_Git\Ames\bin\Debug\System.Web.Http.WebHost.dll
+D:\AMES_Git\Ames\bin\Debug\Ames.Entities.pdb
+D:\AMES_Git\Ames\bin\Debug\EntityFramework.xml
+D:\AMES_Git\Ames\bin\Debug\EntityFramework.SqlServer.xml
+D:\AMES_Git\Ames\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\AMES_Git\Ames\bin\Debug\Newtonsoft.Json.xml
+D:\AMES_Git\Ames\bin\Debug\System.Net.Http.Formatting.xml
+D:\AMES_Git\Ames\bin\Debug\System.Web.Http.xml
+D:\AMES_Git\Ames\bin\Debug\System.Web.Http.WebHost.xml
+D:\AMES_Git\Ames\obj\Debug\Ames.csprojResolveAssemblyReference.cache
+D:\AMES_Git\Ames\obj\Debug\Ames.dll
+D:\AMES_Git\Ames\obj\Debug\Ames.pdb

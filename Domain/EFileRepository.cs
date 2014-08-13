@@ -13,7 +13,7 @@ using Ames.Entities;
 namespace Ames.Domain {
     public class EFileRepository : I_EFileRepository {
         private EFAmesInfra db = new EFAmesInfra();
-
+       
         public EFileInfo Get_EFile(string fileName) {
 
             var result = db.EFileInfo.Where(x => x.EFileName == fileName);
@@ -32,8 +32,7 @@ namespace Ames.Domain {
                 throw new InvalidOperationException("media", new Exception("media is empty or null"));
             }
             FileInfo eFile = new FileInfo(media.FileName);
-
-
+                       
             // set the path to save the media
             string dFolder = brand ?? department;
             dFolder = dFolder ?? "Others";
@@ -58,6 +57,7 @@ namespace Ames.Domain {
             if (System.IO.File.Exists(path + media.FileName)) {
                 System.IO.File.Delete(path + media.FileName);
             }
+
             //media.Stream.CopyToAsync( new FileStream(path + media.FileName, FileMode.Create));
             File.WriteAllBytes(path + media.FileName, media.ByteArray);
 
@@ -69,39 +69,43 @@ namespace Ames.Domain {
                 expiryDate = DateTime.ParseExact("01/01/2100", "dd/MM/yyyy", new CultureInfo("en-US"));
 
             // save to repository; if same file exist, then don't change the fileGUID
-            EFileInfo fileExist = Get_EFile(media.FileName);
-            if (fileExist == null) {
-                fileExist = new EFileInfo {
-                    CreatedDateTime = DateTime.Now,
-                    DirectoryPath = path,
-                    EFileName = media.FileName,
-                    Year = year,
-                    Month = month,
-                    Location = location,
-                    Brand = brand,
-                    Department = department,
-                    Type = type,
-                    GeneratedFrom = generateFrom,
-                    ExpiryDate = expiryDate,
-                    FileGUID = Guid.NewGuid()
-                };
-                db.EFileInfo.Add(fileExist);
-            } else {
-                fileExist.CreatedDateTime = DateTime.Now;
-                fileExist.DirectoryPath = path;
-                fileExist.Year = year;
-                fileExist.Month = month;
-                fileExist.Location = location;
-                fileExist.Brand = brand;
-                fileExist.Department = department;
-                fileExist.Type = type;
-                fileExist.GeneratedFrom = generateFrom;
-                fileExist.ExpiryDate = expiryDate;
-                db.Entry(fileExist).State = EntityState.Modified;
+            EFileInfo fileExist;
+            try {
+                fileExist = Get_EFile(media.FileName);
+                if (fileExist == null) {
+                    fileExist = new EFileInfo {
+                        CreatedDateTime = DateTime.Now,
+                        DirectoryPath = path,
+                        EFileName = media.FileName,
+                        Year = year,
+                        Month = month,
+                        Location = location,
+                        Brand = brand,
+                        Department = department,
+                        Type = type,
+                        GeneratedFrom = generateFrom,
+                        ExpiryDate = expiryDate,
+                        FileGUID = Guid.NewGuid()
+                    };
+                    db.EFileInfo.Add(fileExist);
+                } else {
+                    fileExist.CreatedDateTime = DateTime.Now;
+                    fileExist.DirectoryPath = path;
+                    fileExist.Year = year;
+                    fileExist.Month = month;
+                    fileExist.Location = location;
+                    fileExist.Brand = brand;
+                    fileExist.Department = department;
+                    fileExist.Type = type;
+                    fileExist.GeneratedFrom = generateFrom;
+                    fileExist.ExpiryDate = expiryDate;
+                    db.Entry(fileExist).State = EntityState.Modified;
+                }
+
+                db.SaveChanges();
+            } catch (Exception ex) {
+                throw ex;
             }
-
-            db.SaveChanges();
-
             return fileExist;
         }
 

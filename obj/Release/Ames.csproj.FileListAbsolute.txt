@@ -24,3 +24,22 @@ C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Filters\Filters\MyAuthe
 C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Filters\Filters\MyAuthenticate\obj\Release\Ames.csprojResolveAssemblyReference.cache
 C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Filters\Filters\MyAuthenticate\obj\Release\Ames.csproj.GenerateResource.Cache
 C:\Users\donaldloo\Documents\Visual Studio 2013\Projects\Filters\Filters\MyAuthenticate\obj\Release\Ames.Migrations.init.resources
+D:\AMES_Git\Ames\bin\Release\EFAmesInfra_Authenticate.mdf
+D:\AMES_Git\Ames\bin\Release\Ames.dll.config
+D:\AMES_Git\Ames\bin\Release\Ames.dll
+D:\AMES_Git\Ames\bin\Release\Ames.pdb
+D:\AMES_Git\Ames\bin\Release\Ames.Entities.dll
+D:\AMES_Git\Ames\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\AMES_Git\Ames\bin\Release\System.Net.Http.Formatting.dll
+D:\AMES_Git\Ames\bin\Release\System.Web.Http.dll
+D:\AMES_Git\Ames\bin\Release\System.Web.Http.WebHost.dll
+D:\AMES_Git\Ames\bin\Release\Ames.Entities.pdb
+D:\AMES_Git\Ames\bin\Release\EntityFramework.xml
+D:\AMES_Git\Ames\bin\Release\EntityFramework.SqlServer.xml
+D:\AMES_Git\Ames\bin\Release\Microsoft.Web.Infrastructure.xml
+D:\AMES_Git\Ames\bin\Release\System.Net.Http.Formatting.xml
+D:\AMES_Git\Ames\bin\Release\System.Web.Http.xml
+D:\AMES_Git\Ames\bin\Release\System.Web.Http.WebHost.xml
+D:\AMES_Git\Ames\obj\Release\Ames.csprojResolveAssemblyReference.cache
+D:\AMES_Git\Ames\obj\Release\Ames.dll
+D:\AMES_Git\Ames\obj\Release\Ames.pdb
