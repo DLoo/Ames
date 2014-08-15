@@ -43,3 +43,9 @@ D:\AMES_Git\Ames\bin\Release\System.Web.Http.WebHost.xml
 D:\AMES_Git\Ames\obj\Release\Ames.csprojResolveAssemblyReference.cache
 D:\AMES_Git\Ames\obj\Release\Ames.dll
 D:\AMES_Git\Ames\obj\Release\Ames.pdb
+D:\AMES_Git\Ames\bin\Release\EntityFramework.dll
+D:\AMES_Git\Ames\bin\Release\EntityFramework.SqlServer.dll
+D:\AMES_Git\Ames\bin\Release\Newtonsoft.Json.dll
+D:\AMES_Git\Ames\bin\Release\System.Web.Http.Tracing.dll
+D:\AMES_Git\Ames\bin\Release\Newtonsoft.Json.xml
+D:\AMES_Git\Ames\bin\Release\System.Web.Http.Tracing.xml
